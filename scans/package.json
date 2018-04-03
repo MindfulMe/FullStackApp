@@ -1,0 +1,19 @@
+{
+  "name": "bookstore",
+  "version": "1.0.0",
+  "description": "Server side of the React Native application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+    "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "*",
+    "body-parser": "*",
+    "mongoose": "*"
+  },
+  "author": "Rosty, Brad",
+  "license": "ISC"
+}

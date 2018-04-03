@@ -1,0 +1,9 @@
+{
+  "expo": {
+    "sdkVersion": "22.0.0",
+    "name": "Test-task",
+    "slug": "Test-task",
+    "icon": "src/images/app-icon.png",
+    "privacy": "public"
+  }
+}

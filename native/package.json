@@ -1,6 +1,6 @@
 {
   "name": "FS",
-  "homepage": "http://react-boilerplate.mcnam.ee/",
+  "homepage": "http://mapinc.paperplane.io",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -37,7 +37,6 @@
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
     "test": "node node_modules/jest/bin/jest.js --watch",
-    "web": "webpack-dev-server --content-base build/ --config webpack/web.dev.config.js --port 3001 --inline --hot --colors --historyApiFallback",
     "web-bundle": "webpack --config webpack/web.prod.config.js --progress --colors",
     "clear-cache": "gulp clear-cache"
   },

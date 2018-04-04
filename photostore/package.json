@@ -1,9 +1,10 @@
 {
-  "name": "bookstore",
+  "name": "FS",
   "version": "1.0.0",
-  "description": "Server side of the React Native application",
+  "description": "photostore app",
   "main": "app.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
   "dependencies": {
@@ -12,6 +13,6 @@
     "mongoose": "*",
     "passport": "^0.4.0"
   },
-  "author": "Rosty, Brad",
+  "author": "Rosty",
   "license": "ISC"
 }

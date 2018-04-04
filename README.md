@@ -6,4 +6,6 @@ The repository contains two folders:
 
 Note: the server is already deployed to Heroku so you can actually just run the client from the "native" folder
 
+Also, I have tested the app only on iOS devices.
+
 

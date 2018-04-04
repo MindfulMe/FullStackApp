@@ -10,4 +10,5 @@ Note: the server is already deployed to Heroku so you can actually just run the 
 
 Also, I have tested the app only on iOS devices.
 
+![Small overview](https://image.ibb.co/mne1Kx/Screen_Shot_2018_04_05_at_12_19_34_AM.png)
 

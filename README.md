@@ -5,3 +5,5 @@ The repository contains two folders:
 2) Scans is the RESTful web server built on Node with Express framework with mLab cluster as a storage.
 
 Note: the server is already deployed to Heroku so you can actually just run the client from the "native" folder
+
+

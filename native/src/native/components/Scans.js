@@ -8,7 +8,7 @@ import Error from './Error';
 import Header from './Header';
 import Spacer from './Spacer';
 import MyWeb from './images';
-const RecipeListing = () => {
+const ScanListing = () => {
   return (
     <Container>
       <MyWeb/>
@@ -16,4 +16,4 @@ const RecipeListing = () => {
   );
 };
 
-export default RecipeListing;
+export default ScanListing;

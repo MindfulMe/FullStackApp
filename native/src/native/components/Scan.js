@@ -6,32 +6,32 @@ import ErrorMessages from '../../constants/errors';
 import Error from './Error';
 import Spacer from './Spacer';
 
-const RecipeView = ({
+const ScanView = ({
   error,
-  recipes,
-  recipeId,
+  scans,
+  scanId,
 }) => {
   // Error
   if (error) return <Error content={error} />;
 
-  // Get this Recipe from all recipes
-  let recipe = null;
-  if (recipeId && recipes) {
-    recipe = recipes.find(item => parseInt(item.id, 10) === parseInt(recipeId, 10));
+  // Get this Scans from all scans
+  let scan = null;
+  if (scanId && scans) {
+    scan = scans.find(item => parseInt(item.id, 10) === parseInt(scanId, 10));
   }
 
-  // Recipe not found
-  if (!recipe) return <Error content={ErrorMessages.recipe404} />;
+  // Scans not found
+  if (!scan) return <Error content={ErrorMessages.scan404} />;
 
   // Build Ingredients listing
-  const ingredients = recipe.ingredients.map(item => (
+  const ingredients = scan.ingredients.map(item => (
     <ListItem key={item} rightIcon={{ style: { opacity: 0 } }}>
       <Text>{item}</Text>
     </ListItem>
   ));
 
   // Build Method listing
-  const method = recipe.method.map(item => (
+  const method = scan.method.map(item => (
     <ListItem key={item} rightIcon={{ style: { opacity: 0 } }}>
       <Text>{item}</Text>
     </ListItem>
@@ -40,20 +40,20 @@ const RecipeView = ({
   return (
     <Container>
       <Content padder>
-        <Image source={{ uri: recipe.image }} style={{ height: 100, width: null, flex: 1 }} />
+        <Image source={{ uri: scan.image }} style={{ height: 100, width: null, flex: 1 }} />
 
         <Spacer size={25} />
-        <H3>{recipe.title}</H3>
-        <Text>by {recipe.author}</Text>
+        <H3>{scan.title}</H3>
+        <Text>by {scan.author}</Text>
         <Spacer size={15} />
 
         <Card>
           <CardItem header bordered>
-            <Text>About this recipe</Text>
+            <Text>About this scan</Text>
           </CardItem>
           <CardItem>
             <Body>
-              <Text>{recipe.body}</Text>
+              <Text>{scan.body}</Text>
             </Body>
           </CardItem>
         </Card>
@@ -88,14 +88,14 @@ const RecipeView = ({
   );
 };
 
-RecipeView.propTypes = {
+ScanView.propTypes = {
   error: PropTypes.string,
-  recipeId: PropTypes.string.isRequired,
-  recipes: PropTypes.arrayOf(PropTypes.shape()).isRequired,
+  scanId: PropTypes.string.isRequired,
+  scans: PropTypes.arrayOf(PropTypes.shape()).isRequired,
 };
 
-RecipeView.defaultProps = {
+ScanView.defaultProps = {
   error: null,
 };
 
-export default RecipeView;
+export default ScanView;
